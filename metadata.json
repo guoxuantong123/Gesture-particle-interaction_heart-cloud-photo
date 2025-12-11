@@ -1,0 +1,7 @@
+{
+  "name": "Gesture Heart Cloud",
+  "description": "A 3D interactive heart made of particles and photos, controlled by hand gestures via webcam.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
