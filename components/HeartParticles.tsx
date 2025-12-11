@@ -38,12 +38,12 @@ const HeartParticles: React.FC<HeartParticlesProps> = ({ gestureState, handPosRe
       dPos[i * 3 + 1] = d.y;
       dPos[i * 3 + 2] = d.z;
 
-      // New Color Palette: Light Blues & White
+      // New Color Palette: Deeper Blues & White for contrast
       const r = Math.random();
-      if (r > 0.9) colorObj.setHex(0xffffff); // White
-      else if (r > 0.6) colorObj.setHex(0xbae6fd); // Light Blue (Tailwind Sky-200)
-      else if (r > 0.3) colorObj.setHex(0x7dd3fc); // Medium Blue (Tailwind Sky-300)
-      else colorObj.setHex(0x38bdf8); // Sky Blue (Tailwind Sky-400)
+      if (r > 0.9) colorObj.setHex(0xffffff); // White Sparkles
+      else if (r > 0.6) colorObj.setHex(0x38bdf8); // Sky Blue (Tailwind Sky-400)
+      else if (r > 0.3) colorObj.setHex(0x0ea5e9); // Ocean Blue (Tailwind Sky-500)
+      else colorObj.setHex(0x0284c7); // Deep Blue (Tailwind Sky-600)
       
       cols[i * 3] = colorObj.r;
       cols[i * 3 + 1] = colorObj.g;
@@ -164,7 +164,7 @@ const HeartParticles: React.FC<HeartParticlesProps> = ({ gestureState, handPosRe
         ref={lightRef} 
         position={[0, 0, 10]} 
         intensity={20} 
-        color="#aaddff" 
+        color="#38bdf8" 
       />
     </group>
   );
